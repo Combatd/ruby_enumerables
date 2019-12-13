@@ -14,4 +14,14 @@ class Array
         array # return the array
     end
 
+
+    def my_select
+
+        while(index < array.length)
+            yield(array[index])
+            index += 1
+        end
+
+    end
+
 end

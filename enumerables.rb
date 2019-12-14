@@ -72,4 +72,8 @@ class Array # begin class Array
        result
     end
 
+    def my_rotate(number)
+        self.rotate(number)
+    end
+
 end # end class array

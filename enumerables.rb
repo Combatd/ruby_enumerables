@@ -34,4 +34,11 @@ class Array # begin class Array
         filtered_array
     end
 
+    def my_any?
+        self.each do |ele, idx|
+            return true if (yield(ele))
+        end
+        false
+    end
+
 end # end class array

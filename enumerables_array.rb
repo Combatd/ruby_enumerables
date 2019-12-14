@@ -1,5 +1,6 @@
-class Array # begin class Array
+require "pry"
 
+class Array # begin class Array
 
     def my_each
         array = self

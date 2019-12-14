@@ -58,4 +58,18 @@ class Array # begin class Array
         result
     end
 
+    def my_zip(*elements)
+       index = 0
+       result = []
+
+       while (index < self.length)
+        temporary_array = self.map do |ele|
+            ele += 1
+        end
+        result << temporary_array
+       end
+
+       result
+    end
+
 end # end class array

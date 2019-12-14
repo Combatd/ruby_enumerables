@@ -76,4 +76,9 @@ class Array # begin class Array
         self.rotate(number)
     end
 
+    def my_join(character)
+        joined_array = self.map |ele| { ele += character }
+        joined_array # return the new array
+    end
+
 end # end class array

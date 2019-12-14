@@ -21,4 +21,17 @@ class Array # begin class Array
         new_array.concat(my_each(array))
     end
 
+    def my_reject
+        array = self
+        filtered_array = []
+        
+        index = 0
+        while(index < array.length)
+            filtered_array << array[index if (yield(array[index]))
+            index += 1
+        end
+
+        filtered_array
+    end
+
 end # end class array

@@ -38,7 +38,15 @@ class Array # begin class Array
         self.each do |ele, idx|
             return true if (yield(ele))
         end
-        false
+        return false
     end
+
+    def my_all?
+        self.each do |ele, idx|
+            return false if (yield(ele))
+        end
+        return true
+    end
+
 
 end # end class array

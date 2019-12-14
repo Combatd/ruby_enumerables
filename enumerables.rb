@@ -1,4 +1,4 @@
-class Array
+class Array # begin class Array
 
 
     def my_each
@@ -16,12 +16,9 @@ class Array
 
 
     def my_select
-
-        while(index < array.length)
-            yield(array[index])
-            index += 1
-        end
-
+        array = self
+        new_array = []
+        new_array.concat(my_each(array))
     end
 
-end
+end # end class array

@@ -48,5 +48,14 @@ class Array # begin class Array
         return true
     end
 
+    def my_flatten
+        return self if !self.is_a?(Array)
+        result = []
+        self.each do |ele|
+            result += ele
+        end
+
+        result
+    end
 
 end # end class array

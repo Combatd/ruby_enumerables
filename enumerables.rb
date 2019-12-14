@@ -81,4 +81,17 @@ class Array # begin class Array
         joined_array # return the new array
     end
 
+    def my_reverse
+        reversed_array = []
+        i = 0
+        j = self.length - 1
+        while (i < self.length)
+            reversed_array << self[j]
+            i += 1
+            j -= 1
+        end
+        
+        reversed_array
+    end
+
 end # end class array

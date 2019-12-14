@@ -1,10 +1,18 @@
+require "pry"
 # ### Factors
 #
 # Write a method `factors(num)` that returns an array containing all the
 # factors of a given number.
 
 def factors(num)
+  factors_array = []
+  (1..num).each do |ele|
+    factors_array << ele if num % ele === 0
+  end
+  factors_array
 end
+
+
 
 # ### Bubble Sort
 #

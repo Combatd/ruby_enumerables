@@ -22,3 +22,16 @@ Note: Unlike in the prepwork, there are no specs to compare against. You'll have
 * #bubble_sort(&prc)
 * #substrings(string)
 * #subwords(word, dictionary)
+
+### Enumerables
+* Array#my_each
+* Array#my_select
+* Array#my_reject
+* Array#my_any
+
+### Array Monkey Patching
+* #my_flatten
+* #my_zip
+* #my_rotate
+* #my_join
+* #my_reverse

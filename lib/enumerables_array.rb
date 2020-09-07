@@ -81,10 +81,12 @@ def substrings(string)
         end
     end
 
-    substrings_arr.uniq
+    substrings_arr.uniq # only return unique substrings
 end
 
 def subwords(word, dictionary)
+    # slice out elements that actually exist in the dictionary
+    substrings(word).select { |substring| dictionary.include?(substring) }
 end
 
 # ### Doubler

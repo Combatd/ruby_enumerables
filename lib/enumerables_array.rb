@@ -56,9 +56,6 @@ end
 class Array
   def bubble_sort!(&prc)
   end
-
-  def bubble_sort(&prc)
-  end
 end
 
 # ### Substrings and Subwords
@@ -75,6 +72,16 @@ end
 # words).
 
 def substrings(string)
+    substrings_arr = [] # initialize empty array
+    # looping through the entire string
+    (0...string.length). each do |word_start|
+        (word_start...string.length).each do |sub_string_idx|
+            sub_string = string[word_start..sub_string_idx] # take a range of characters with the starting character of each iteration
+            substrings_arr << sub_string # push it into the substrings_arr
+        end
+    end
+
+    substrings_arr.uniq
 end
 
 def subwords(word, dictionary)
